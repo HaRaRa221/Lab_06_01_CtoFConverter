@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/CtoF.java/CtoF.java.iml" filepath="$PROJECT_DIR$/CtoF.java/CtoF.java.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lab_06_01_CtoFConverter.iml" filepath="$PROJECT_DIR$/Lab_06_01_CtoFConverter.iml" />
     </modules>
   </component>
