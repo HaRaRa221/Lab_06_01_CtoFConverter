@@ -8,40 +8,28 @@ public class CtoF {
         double tempCelcius = 0;
         double tempFahren = 0;
         String trash = "";
-        boolean done = true;
+        boolean more = true;
 
         do {
             System.out.println("Enter the temperature in Celcius: ");
-            if (in.hasNextDouble)
-            {
-                tempCelcius = in.nextDouble;
-                in.nextLine();
-                if (tempCelcius = double)
-                {
-                    tempFahren = (tempCelcius * 9/5) +32;
-                    System.out.println("The temperature in Fahrenheit is: " + tempFahren);
 
-                }
-                else
-                {
-                    System.out.println("You must enter a number for Celcius.);
-                }
+            if (in.hasNextDouble())
+            {
+                tempCelcius = in.nextDouble();
+                in.nextLine();
+                tempFahren = (tempCelcius * 9/5) +32;
+                System.out.println("The temperature in Fahrenheit is: " + tempFahren);
+                more = false;
+
             }
             else
             {
                 trash = in.nextLine();
-                System.out.println("You must enter a number in Celcius. You entered: " + trash);
-            }
-
-            System.out.println("Do you have another number to enter. [Y/N]");
-            if (YorNAnswer.equalsIgnoreCase("N")
-            {
-                done = true;
-            }
-            else
-            {
+                System.out.println("You entered the wrong input for Celcius: " + trash);
+                input.nextLine();
                 continue;
             }
-        }while (!done)
+        }
+        while(more)
     }
 }
